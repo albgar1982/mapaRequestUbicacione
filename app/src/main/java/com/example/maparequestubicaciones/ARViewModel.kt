@@ -20,7 +20,7 @@ class ARViewModel : ViewModel() {
 
                 val client = OkHttpClient()
                 val request = Request.Builder()
-                request.url("https://1f77-139-47-74-123.eu.ngrok.io/salvarProgreso/$usuario/$ruta")
+                request.url("https://d45b-139-47-74-123.eu.ngrok.io/salvarProgreso/$usuario/$ruta")
 
                 val call = client.newCall(request.build())
                 call.enqueue(object : Callback {

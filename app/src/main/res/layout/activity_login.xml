@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
-    android:background="#FFE6C8C8"
+    android:background="@mipmap/fondologin1"
     android:orientation="vertical"
-    android:padding="15dp"
+    android:padding="20dp"
     tools:context=".LoginActivity">
     <LinearLayout
         android:layout_width="match_parent"

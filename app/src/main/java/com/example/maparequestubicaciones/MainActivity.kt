@@ -66,6 +66,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap
 
+        map.uiSettings.isCompassEnabled = false
         //Cuando el mapa se cree, vamos a comprobar si están los permisos y a intentar localizar al usuario
         enableLocation()
 

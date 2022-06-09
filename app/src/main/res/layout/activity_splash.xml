@@ -6,17 +6,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".SplashActivity"
-    android:background="@mipmap/fondosplash">
-
-    <ImageView
-        android:layout_marginHorizontal="10dp"
-        android:src="@mipmap/fondoarbol"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_height="0dp"
-        android:layout_width="0dp"/>
+    android:background="@mipmap/fondosplashscreen2">
 
     <LinearLayout
         android:id="@+id/elf"
@@ -27,7 +17,9 @@
         android:orientation="vertical"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imagen"

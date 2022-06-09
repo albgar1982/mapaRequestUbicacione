@@ -1,35 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout_principal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="5dp"
-    android:orientation="horizontal">
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="20dp"
+    android:background="@drawable/fondo_recycler">
 
     <TextView
         android:id="@+id/tv_nombre"
-        android:layout_width="0dp"
-        android:layout_marginHorizontal="20dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
-        android:layout_weight="1"
+        android:layout_marginHorizontal="20dp"
         android:gravity="center"
+        android:padding="5dp"
         android:text="@string/nombre"
         android:textColor="@color/black"
-        android:background="@drawable/fondo_recycler"/>
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 <!--
-    <TextView
-        android:id="@+id/llavesColeccionadas"
+     <TextView
+        android:id="@+id/presents"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
+        android:padding="10dp"
         android:text="0/0"
         android:textSize="20sp"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_nombreRuta"
-        app:layout_constraintStart_toEndOf="@+id/tv_nombreRuta"
-        app:layout_constraintTop_toTopOf="@+id/tv_nombreRuta" />
+        app:layout_constraintBottom_toBottomOf="@+id/tv_nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_nombre"
+        app:layout_constraintTop_toTopOf="@+id/tv_nombre" />
 -->
